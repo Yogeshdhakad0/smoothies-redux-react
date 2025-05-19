@@ -1,0 +1,25 @@
+
+
+ @media (max-width:330px) {
+    .girdchange{
+        border: 2px solid red;
+        display: grid;
+        grid-template-areas:
+        'areaheader areaheader areaheader arearight  arearight  arearight'
+        ' areamain areamain areamain areamain areamain areamain'
+        'areafooter areafooter areafooter areafooter footer footer';
+    }
+    .areaheader{
+        grid-area: areaheader ;
+    }
+    .areamain{
+        grid-area: areamain ;
+    }
+    .areafooter{
+        grid-area: areafooter ;
+    }
+    .arearight{
+        grid-area: arearight ;
+    }
+    
+ }
