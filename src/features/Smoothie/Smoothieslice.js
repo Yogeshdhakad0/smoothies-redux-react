@@ -127,10 +127,10 @@ const Smoothislice = createSlice({
 export const { addCard,removeCard,increment,decrement ,cardd,Addonee} = Smoothislice.actions;
 export default Smoothislice.reducer;
 
-
+const Baseurl='https://smoothies-redux-react.onrender.com'
 
 export const getsmooties = createAsyncThunk('GETT/SHOO', async () => {
-    const response = await axios.get("https://smoothies-redux-react.onrender.com//smoothies");
+    const response = await axios.get(`${Baseurl}/smoothies`);
     return response.data;
   });
 
@@ -138,7 +138,7 @@ export const getsmooties = createAsyncThunk('GETT/SHOO', async () => {
 
   
 export const getaddone = createAsyncThunk('ADDONE/ADD', async () => {
-    const response = await axios.get("https://smoothies-redux-react.onrender.com//addOns");
+    const response = await axios.get(`${Baseurl}/addOns`);
     return response.data;
   });
 
@@ -146,6 +146,9 @@ export const getaddone = createAsyncThunk('ADDONE/ADD', async () => {
 
    
 export const getDistance = createAsyncThunk('Distance/ADD', async () => {
-    const response = await axios.get("https://smoothies-redux-react.onrender.com/deliveryCharges");
+    const response = await axios.get(`${Baseurl}/deliveryCharges`);
     return response.data;
   });
+
+
+  
