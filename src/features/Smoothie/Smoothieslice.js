@@ -130,7 +130,7 @@ export default Smoothislice.reducer;
 
 
 export const getsmooties = createAsyncThunk('GETT/SHOO', async () => {
-    const response = await axios.get("http://localhost:5000/smoothies");
+    const response = await axios.get("https://smoothies-redux-react.onrender.com//smoothies");
     return response.data;
   });
 
@@ -138,7 +138,7 @@ export const getsmooties = createAsyncThunk('GETT/SHOO', async () => {
 
   
 export const getaddone = createAsyncThunk('ADDONE/ADD', async () => {
-    const response = await axios.get("http://localhost:5000/addOns");
+    const response = await axios.get("https://smoothies-redux-react.onrender.com//addOns");
     return response.data;
   });
 
@@ -146,6 +146,6 @@ export const getaddone = createAsyncThunk('ADDONE/ADD', async () => {
 
    
 export const getDistance = createAsyncThunk('Distance/ADD', async () => {
-    const response = await axios.get("http://localhost:5000/deliveryCharges");
+    const response = await axios.get("https://smoothies-redux-react.onrender.com/deliveryCharges");
     return response.data;
   });
